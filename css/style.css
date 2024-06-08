@@ -1,0 +1,103 @@
+body{
+    background-color: #f7ecde;
+}
+
+.title h1{
+    font-family: "Pacifico", cursive;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 60px;
+    color:rgb(53, 46, 40);
+    text-align: center;
+    position: relative;
+    width: fit-content;
+    margin: auto;
+    overflow: hidden;
+}
+
+.title h1::after{
+    content: "";
+    width: 100%;
+    height: 50%;
+    background-color: rgb(254, 194, 96);
+    position: absolute;
+    top: 70%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    transition: all 0.5s;
+} 
+.title h1:hover::after{
+    top: 30%;
+    height: 100%;
+
+}
+.bookmark-body {
+    border-width: 2px 0 2px 0;
+    border-style: dotted;
+    border-color: #352e28;
+}
+.sec-title{
+    font-family: "Righteous", cursive;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 25px;
+    background-image: linear-gradient(to right, #3ca55c 30%, #b5ac49 70%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.form-control:focus {
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 .25rem rgba(254, 193, 96, 0.404);
+}
+.btn-submit {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #d1512d;
+    --bs-btn-border-color: #d1512d;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #bb4120;
+    --bs-btn-hover-border-color: #a03315;
+}
+
+.button1{
+    width: 150px;
+    margin-top: 30px !important;
+    margin-bottom: 10px !important;
+    margin: auto;
+}
+#lightBoxContainer{
+    background-color: rgb(0, 0, 0,0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+#lightBox{
+    width: 500px;
+    height: 30vh;
+    background-color: white;
+}
+.circles span {
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+.circles span:nth-child(1) {
+    background-color: #f15f5d;
+}
+.circles span:nth-child(2) {
+    background-color: #febe2e;
+}
+.circles span:nth-child(3) {
+    background-color: #4db748;
+}
+
+::selection{
+    background:#febe2e;
+}
